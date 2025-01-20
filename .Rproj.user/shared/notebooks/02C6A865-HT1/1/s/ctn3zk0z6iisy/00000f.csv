@@ -1,0 +1,3 @@
+"0","carros<-read.csv(""data/cars.csv"")"
+"0",""
+"0","head(carros, 5) "

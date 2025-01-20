@@ -1,0 +1,50 @@
+---
+title: "HT1"
+output: html_document
+date: "2025-01-20"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r echo=FALSE}
+carros<-read.csv("data/cars.csv")
+
+head(carros, 5) 
+```
+
+```{r echo=FALSE}
+carros<-read.csv("data/cars.csv")
+
+sedans <- carros[carros$body_style == "hatchback", ]
+sedans
+```
+
+
+```{r echo=FALSE}
+carros <- read.csv("data/cars.csv")
+
+average <- mean(carros$normalized_losses, na.rm = TRUE)
+print(average)
+```
+
+
+```{r echo=FALSE}
+carros <- read.csv("data/cars.csv")
+
+peligrosos <- aggregate(cbind(symboling, normalized_losses) ~ make, 
+                      data = carros, 
+                      FUN = function(x) mean(x, na.rm = TRUE))
+
+head(peligrosos, 6)
+
+```
+
+
+
+
+
+
+

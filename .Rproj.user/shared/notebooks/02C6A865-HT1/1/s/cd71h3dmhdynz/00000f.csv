@@ -1,0 +1,8 @@
+"0","carros <- read.csv(""data/cars.csv"")"
+"0",""
+"0","average <- mean(carros$normalized_losses, na.rm = TRUE)"
+"0","print(average)"
+"1","[1]"
+"1"," 122"
+"1","
+"

@@ -1,0 +1,7 @@
+"0","carros <- read.csv(""data/cars.csv"")"
+"0",""
+"0","peligrosos <- aggregate(cbind(symboling, normalized_losses) ~ make, "
+"0","                      data = carros, "
+"0","                      FUN = function(x) mean(x, na.rm = TRUE))"
+"0",""
+"0","head(peligrosos, 6)"

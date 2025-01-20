@@ -1,0 +1,4 @@
+"0","carros<-read.csv(""data/cars.csv"")"
+"0",""
+"0","sedans <- carros[carros$body_style == ""hatchback"", ]"
+"0","sedans"
